@@ -42,4 +42,10 @@ public class CustomerService {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
+
+    public static String chooseNameOfItemToEntity() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter name of Your item to be name in database:");
+        return scanner.nextLine();
+    }
 }

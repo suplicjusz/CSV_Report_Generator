@@ -9,6 +9,7 @@ public class ReportMain {
         do {
             ReportGenerator.generateReport(CustomerService.chooseInputPath());
             ReportGenerator.saveToCsvFile();
+            //ReportGenerator.saveToDatabase(); //!!!Need correct configuration xml!!!
             CustomerService.setTryAgain();
         } while (tryAgain);
     }

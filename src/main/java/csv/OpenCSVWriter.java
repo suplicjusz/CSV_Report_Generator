@@ -22,8 +22,7 @@ public class OpenCSVWriter {
             csvWriter.writeNext(result);
             csvWriter.close();
         } catch (IOException e) {
-            //e.printStackTrace();
-            System.out.println();
+            System.out.println("Invalid save path!");
         }
     }
 }

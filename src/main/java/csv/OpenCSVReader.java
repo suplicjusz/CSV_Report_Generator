@@ -27,7 +27,6 @@ public class OpenCSVReader {
                 records.add(t);
             }
         } catch (IOException | CsvValidationException | NumberFormatException ex) {
-            //ex.printStackTrace();
             System.out.println("Check the delivered file! Data recording is invalid!");
         }
         item.setRecords(records);
